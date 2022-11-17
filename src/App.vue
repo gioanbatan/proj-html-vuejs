@@ -1,14 +1,24 @@
 <script>
+import { store } from "./store";
+import AppHeader from "./components/AppHeader.vue"
 
+export default {
+    components: {
+        AppHeader,
+    },
+    data() {
+        return {
+            store
+        }
+    }
+}
 </script>
 
 <template>
     <!-- Header -->
-    <!-- Header top -->
-    <!-- /Header top -->
+    <AppHeader />
+    {{ store.test }}
 
-    <!-- Header bottom -->
-    <!-- /Header bottom -->
     <!-- /Header -->
 
     <!-- Main -->
