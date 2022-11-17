@@ -86,6 +86,46 @@ export default {
         <!-- /Header top -->
 
         <!-- Header bottom -->
+        <section class="header-bottom d-flex justify-content-between align-items-center">
+            <div class="logo-container">
+                <a href="">
+                    <img src="../assets/img/MasterStudy_logo.svg" alt="Master Study">
+                </a>
+            </div>
+
+            <div class="search-bar">
+                <a href="">
+                    <span>category</span>
+                </a>
+
+                <label for=""></label>
+                <input type="text">
+                <button class="btn btn-primary ms_btn">
+                    GO
+                </button>
+            </div>
+
+            <div class="actions">
+                <a href="">
+                    Become an instructor
+                </a>
+                <a href="">
+                    For Enterprise
+                </a>
+            </div>
+
+            <div class="user-options">
+                <a href="">
+                    Log In
+                </a>
+
+                <button class="btn btn-primary ms_btn">
+                    Sign up
+                </button>
+            </div>
+
+
+        </section>
         <!-- /Header bottom -->
     </header>
 </template>
@@ -111,5 +151,16 @@ li {
 
     // DEBUG
     border-bottom: 1px solid black;
+}
+
+.header-bottom {
+    font-size: 0.8rem;
+
+    // DEBUG
+    border-bottom: 1px dashed black;
+}
+
+.ms_btn {
+    font-size: 0.8rem;
 }
 </style>
