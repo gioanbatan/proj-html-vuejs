@@ -1,6 +1,17 @@
 <script>
+import AppStdNavMenu from "./AppStdNavMenu.vue";
+import { store } from "../store";
+
 export default {
     name: "AppHeader",
+    data() {
+        return {
+            store
+        }
+    },
+    components: {
+        AppStdNavMenu,
+    }
 }
 
 </script>
@@ -16,7 +27,10 @@ export default {
                 </select>
             </div>
 
-            <nav class="d-flex justify-content-end flex-grow-1">
+            <nav class="flex-grow-1 justify-content-end align-items-center">
+                <AppStdNavMenu :menuItems="store.navItems" />
+            </nav>
+            <!-- < nav class=" d-flex justify-content-end flex-grow-1">
                 <ul class="d-flex">
                     <li class="p-1">
                         <a href="">
@@ -48,7 +62,7 @@ export default {
                         </a>
                     </li>
                 </ul>
-            </nav>
+                </nav> -->
             <div class="links-icons">
                 <ul class="d-flex">
                     <li>
@@ -142,12 +156,9 @@ header {
     background-color: aqua;
 }
 
-li {
-    list-style: none;
-}
-
 .header-top {
     font-size: 0.7rem;
+    height: 45%;
 
     // DEBUG
     border-bottom: 1px solid black;
@@ -155,6 +166,7 @@ li {
 
 .header-bottom {
     font-size: 0.8rem;
+    height: 55%;
 
     // DEBUG
     border-bottom: 1px dashed black;

@@ -12,6 +12,43 @@ export const store = reactive({
             id: "it"
         }
     ],
+    navItems: [
+        {
+            name: "Courses",
+            link: "#",
+            newFlag: false,
+        },
+        {
+            name: "Zoom",
+            link: "",
+            newFlag: true,
+        },
+        {
+            name: "Pages",
+            link: "",
+            newFlag: false,
+        },
+        {
+            name: "Bundles",
+            link: "",
+            newFlag: false,
+        },
+        {
+            name: "Course Formats",
+            link: "",
+            newFlag: false,
+        },
+        {
+            name: "Add Course",
+            link: "",
+            newFlag: true,
+        },
+        {
+            name: "Demos",
+            link: "",
+            newFlag: false,
+        },
+    ],
     inputSearch: "",
     macroCategories: [
         "Art",
