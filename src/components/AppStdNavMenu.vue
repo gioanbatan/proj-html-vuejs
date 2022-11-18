@@ -11,7 +11,7 @@ export default {
 <template>
     <ul class="d-flex justify-content-end">
         <li v-for="(item, index) in menuItems" :key="index" class="p-1">
-            <a href="">
+            <a :href="item.link">
                 {{ item.name }}
                 <div v-if="item.newFlag" class="new">NEW</div>
             </a>

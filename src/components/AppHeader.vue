@@ -1,5 +1,6 @@
 <script>
 import AppStdNavMenu from "./AppStdNavMenu.vue";
+import AppStdIconLinks from "./AppStdIconLinks.vue"
 import { store } from "../store";
 
 export default {
@@ -11,6 +12,7 @@ export default {
     },
     components: {
         AppStdNavMenu,
+        AppStdIconLinks,
     }
 }
 
@@ -30,71 +32,9 @@ export default {
             <nav class="flex-grow-1 justify-content-end align-items-center">
                 <AppStdNavMenu :menuItems="store.navItems" />
             </nav>
-            <!-- < nav class=" d-flex justify-content-end flex-grow-1">
-                <ul class="d-flex">
-                    <li class="p-1">
-                        <a href="">
-                            ciao
-                        </a>
-                    </li>
 
-                    <li class="p-1">
-                        <a href="">
-                            ciao
-                        </a>
-                    </li>
-
-                    <li class="p-1">
-                        <a href="">
-                            ciao
-                        </a>
-                    </li>
-
-                    <li class="p-1">
-                        <a href="">
-                            ciao
-                        </a>
-                    </li>
-
-                    <li class="p-1">
-                        <a href="">
-                            ciao
-                        </a>
-                    </li>
-                </ul>
-                </nav> -->
             <div class="links-icons">
-                <ul class="d-flex">
-                    <li>
-                        <a href="">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </li>
-                </ul>
+                <AppStdIconLinks :icons="store.headerIcons" />
             </div>
         </section>
         <!-- /Header top -->
@@ -162,6 +102,10 @@ header {
 
     // DEBUG
     border-bottom: 1px solid black;
+
+    .links-icons {
+        font-size: 0.8rem;
+    }
 }
 
 .header-bottom {
@@ -170,6 +114,7 @@ header {
 
     // DEBUG
     border-bottom: 1px dashed black;
+
 }
 
 .ms_btn {

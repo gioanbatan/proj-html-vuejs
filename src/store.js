@@ -49,6 +49,48 @@ export const store = reactive({
             newFlag: false,
         },
     ],
+    headerIcons: [
+        {
+            name: "Twitter",
+            icon: "fa-brands fa-twitter",
+            link: "https://twitter.com"
+        },
+        {
+            name: "Instagram",
+            icon: "fa-brands fa-instagram",
+            link: "https://www.instagram.com/"
+        },
+        {
+            name: "Behance",
+            icon: "fa-brands fa-behance",
+            link: "https://www.behance.net/"
+        },
+        {
+            name: "???",
+            icon: "fa-solid fa-basketball",
+            link: ""
+        },
+        {
+            name: "???",
+            icon: "fa-solid fa-quote-right",
+            link: ""
+        },
+        {
+            name: "git",
+            icon: "fa-brands fa-git",
+            link: "https://git-scm.com/"
+        },
+        {
+            name: "LinkedIn",
+            icon: "fa-brands fa-linkedin",
+            link: "https://www.linkedin.com/"
+        },
+        {
+            name: "Pinterest",
+            icon: "fa-brands fa-pinterest",
+            link: "https://www.pinterest.it/"
+        }
+    ],
     inputSearch: "",
     macroCategories: [
         "Art",
