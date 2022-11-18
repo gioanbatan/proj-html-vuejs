@@ -1,12 +1,14 @@
 <script>
 import { store } from "./store";
 import AppHeader from "./components/AppHeader.vue"
+import AppFooter from "./components/AppFooter.vue"
 import AppMain from "./components/AppMain.vue"
 
 export default {
     components: {
         AppHeader,
-        AppMain
+        AppMain,
+        AppFooter
     },
     data() {
         return {
@@ -21,47 +23,18 @@ export default {
 <template>
     <!-- Header -->
     <AppHeader />
-    <AppMain />
-
-
     <!-- /Header -->
 
     <!-- Main -->
-    <!-- CTA -->
-    <!-- /CTA -->
-
-    <!-- Merits -->
-    <!-- /Merits -->
-
-    <!-- Browse categories -->
-    <!-- /Browse categories -->
-
-    <!-- Jumbotron -->
-    <!-- /Jumbotron -->
-
-    <!-- Browse Recent Coureses -->
-    <!-- /Browse Recent Coureses -->
-
-    <!-- Proud section -->
-    <!-- /Proud section -->
-
-    <!-- Subscrive Newsletter -->
-    <!-- /Subscrive Newsletter -->
-
-    <!-- Browse Popular Courses -->
-    <!-- /Browse Popular Courses -->
-
-    <!-- Banners section -->
-    <!-- /Banners section -->
-
-    <!-- Quote -->
-    <!-- /Quote -->
+    <AppMain />
     <!-- /Main -->
 
     <!-- Footer -->
+    <AppFooter />
     <!-- /Footer -->
 </template>
 
 <style lang="scss">
 @use "./styles/general.scss" as *;
+@use "./styles/partials/variables" as *;
 </style>

@@ -91,6 +91,24 @@ export const store = reactive({
             link: "https://www.pinterest.it/"
         }
     ],
+    footerIcons: [
+        {
+            name: "Facebook",
+            icon: "fa-brands fa-facebook",
+            link: "https://www.facebook.com/"
+        },
+
+        {
+            name: "Twitter",
+            icon: "fa-brands fa-twitter",
+            link: "https://twitter.com"
+        },
+        {
+            name: "Instagram",
+            icon: "fa-brands fa-instagram",
+            link: "https://www.instagram.com/"
+        }
+    ],
     inputSearch: "",
     inputSearchCategory: "",
     macroCategories: [
@@ -118,7 +136,7 @@ export const store = reactive({
     ],
     totalStudents: 1234,
     countriesReached: 150,
-    footerPages: [
+    pagesList: [
         {
             name: "Blog",
             link: "",
@@ -146,5 +164,17 @@ export const store = reactive({
     ],
     infoTel: "+1 212 458 300 32",
     infoFax: "+1 212 375 24 14",
-    infoMail: "info@masterstudy.com"
+    infoMail: "info@masterstudy.com",
+    blogPosts: [
+        {
+            title: 'Our main target is to "Developing Yourself as a Leader"',
+            datePublished: "2003-11-25",
+            thumb: "photo-1517520287167-4bbf64a00d66-122x120.jpeg",
+        },
+        {
+            title: "Those Other College Expenses You Aren't Thinking About",
+            datePublished: "2011-08-10",
+            thumb: "photo-1490376840453-5f616fbebe5b-150x150.jpeg",
+        },
+    ]
 })

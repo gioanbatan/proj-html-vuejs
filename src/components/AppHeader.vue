@@ -53,36 +53,39 @@ export default {
             <div class="search-bar">
                 <AppSearch :searchType="'Search course'" :categories="store.macroCategories" />
             </div>
-            <!-- <div class="search-bar">
-                <a href="">
-                    <span>category</span>
-                </a>
 
-                <label for=""></label>
-                <input type="text">
-                <button class="btn btn-primary ms_btn">
-                    GO
-                </button>
-            </div> -->
-
-            <div class="actions">
+            <div class="actions d-flex align-items-center">
                 <a href="">
+                    <i class="fa-solid fa-bullhorn"></i>
                     Become an instructor
                 </a>
                 <a href="">
+                    <i class="fa-solid fa-briefcase"></i>
                     For Enterprise
                 </a>
             </div>
 
-            <div class="user-options">
-                <a href="">
+            <div class="user-options d-flex align-items-center">
+                <a v-if="!store.isLogged" href="">
+                    <i class="fa-regular fa-user"></i>
                     Log In
+                </a>
+                <a v-else href="">
+                    <i class="fa-regular fa-user"></i>
+                    USERNAME
                 </a>
 
                 <button class="btn btn-primary ms_btn">
                     Sign up
                 </button>
+
+                <div class="add-favorites">
+                    <a href="">
+                        <i class="fa-regular fa-bookmark"></i>
+                    </a>
+                </div>
             </div>
+
 
 
         </section>
@@ -95,11 +98,10 @@ export default {
 @use "../styles/partials/variables" as *;
 
 header {
+    position: fixed;
     width: 100%;
     height: $header-height;
-
-    // DEBUG
-    background-color: aqua;
+    background-color: $col-white;
 }
 
 .header-top {
@@ -120,7 +122,21 @@ header {
 
     // DEBUG
     border-bottom: 1px dashed black;
+
+    .actions {
+        i {
+            color: $col-std-blue;
+        }
+    }
+
+    .user-options,
+    .add-favorites {
+        a {
+            color: $col-std-blue
+        }
+    }
 }
+
 
 .ms_btn {
     font-size: 0.8rem;

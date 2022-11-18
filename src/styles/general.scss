@@ -1,3 +1,4 @@
+@use "./partials/variables" as *;
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 @import "node_modules/@fontsource/montserrat/index.css";
@@ -24,13 +25,23 @@ ul {
     padding: 0;
 }
 
+button {
+    white-space: nowrap;
+}
+
 //COMMON
 //Default font
 body {
     font-family: "Montserrat", sans-serif;
+    color: $col-text;
 }
 
 //UTILITIES
+//Colors
+.col-gray {
+    color: $col-gray;
+}
+
 //Buttons
 
 
