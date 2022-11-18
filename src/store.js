@@ -92,6 +92,7 @@ export const store = reactive({
         }
     ],
     inputSearch: "",
+    inputSearchCategory: "",
     macroCategories: [
         "Art",
         "Exercise",

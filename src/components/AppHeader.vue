@@ -1,6 +1,7 @@
 <script>
 import AppStdNavMenu from "./AppStdNavMenu.vue";
-import AppStdIconLinks from "./AppStdIconLinks.vue"
+import AppStdIconLinks from "./AppStdIconLinks.vue";
+import AppSearch from "./AppSearch.vue";
 import { store } from "../store";
 
 export default {
@@ -13,6 +14,7 @@ export default {
     components: {
         AppStdNavMenu,
         AppStdIconLinks,
+        AppSearch
     }
 }
 
@@ -24,8 +26,9 @@ export default {
         <section class="header-top d-flex justify-content-between align-items-center">
             <div class="language">
                 <select name="language" id="language">
-                    <option value="en" selected>English</option>
-                    <option value="it">Italiano</option>
+                    <option v-for="(language, index) in store.languageOptions" :key="index" :value="language.id">{{
+                            language.name
+                    }}</option>
                 </select>
             </div>
 
@@ -48,6 +51,9 @@ export default {
             </div>
 
             <div class="search-bar">
+                <AppSearch :searchType="'Search course'" :categories="store.macroCategories" />
+            </div>
+            <!-- <div class="search-bar">
                 <a href="">
                     <span>category</span>
                 </a>
@@ -57,7 +63,7 @@ export default {
                 <button class="btn btn-primary ms_btn">
                     GO
                 </button>
-            </div>
+            </div> -->
 
             <div class="actions">
                 <a href="">
@@ -114,7 +120,6 @@ header {
 
     // DEBUG
     border-bottom: 1px dashed black;
-
 }
 
 .ms_btn {
