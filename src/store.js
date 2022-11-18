@@ -25,12 +25,12 @@ export const store = reactive({
     courses: [
         {
             name: "Web Coding and Apache Basics",
-            thumbnail: "./assets/img/12345-1-272x161.png"
+            thumbnail: "./assets/img/12345-1-272x161.png",
             category: "Apache",
             duration: 6,
             cost: 0,
             dateCreation: "2022-11-10",
-            vote: [4, 5, 5, 2, 4, 5]
+            vote: [4, 5, 5, 2, 4, 5],
             subscriptions: 65,
             special: false,
             featured: false,
