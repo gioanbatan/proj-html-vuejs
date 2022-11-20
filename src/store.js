@@ -112,12 +112,30 @@ export const store = reactive({
     inputSearch: "",
     inputSearchCategory: "",
     macroCategories: [
-        "Art",
-        "Exercise",
-        "Material Design",
-        "Music",
-        "Photography",
-        "Software Developer"
+        {
+            name: "Art",
+            thumb: "cat_2-740x310.jpg"
+        },
+        {
+            name: "Exercise",
+            thumb: "cat_4-740x310.jpg"
+        },
+        {
+            name: "Material Design",
+            thumb: "cat_3-740x310.jpg"
+        },
+        {
+            name: "Music",
+            thumb: "cat_5-740x310.jpg"
+        },
+        {
+            name: "Photogrphy",
+            thumb: "cat_6-740x310.jpg"
+        },
+        {
+            name: "Software Developer",
+            thumb: "cat_1-1540x750.jpg"
+        }
     ],
     isLogged: false,
     courses: [

@@ -20,7 +20,7 @@ export default {
     <label for="category"><i class="fa-solid fa-bars"></i></label>
     <select name="category" id="category" v-model="store.inputSearchCategory">
         <option selected value="" disabled hidden>CATEGORY</option>
-        <option v-for="(selected, index) in categories" :key="index" :value="selected">{{ selected }}</option>
+        <option v-for="(selected, index) in categories" :key="index" :value="selected.name">{{ selected.name }}</option>
     </select>
 
     <label for="search" hidden>{{ searchType }}</label>

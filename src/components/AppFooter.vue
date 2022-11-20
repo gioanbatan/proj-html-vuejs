@@ -61,6 +61,12 @@ export default {
 @use "../styles/general.scss" as *;
 @use "../styles/partials/variables" as *;
 
+
+footer {
+    // DEBUG
+    border-top: 1px dashed black;
+}
+
 .about {
     p {
         font-size: 0.67rem;
@@ -93,7 +99,6 @@ export default {
             right: 0;
             width: 30px;
             height: 100%;
-            // background-color: aquamarine;
             background: linear-gradient(to right, transparent, $col-white 20px);
         }
     }
