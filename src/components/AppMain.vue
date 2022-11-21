@@ -5,6 +5,7 @@ import AppBrowseCategories from "./AppBrowseCategories.vue";
 import AppJumbotron from "./AppJumbotron.vue";
 import AppRecentCourses from "./AppRecentCourses.vue";
 import AppProud from "./AppProud.vue";
+import AppSubscribeNewsletter from "./AppSubscribeNewsletter.vue";
 
 export default {
     name: "AppMain",
@@ -14,7 +15,8 @@ export default {
         AppBrowseCategories,
         AppJumbotron,
         AppRecentCourses,
-        AppProud
+        AppProud,
+        AppSubscribeNewsletter
     }
 }
 </script>
@@ -46,6 +48,7 @@ export default {
         <!-- /Proud section -->
 
         <!-- Subscrive Newsletter -->
+        <AppSubscribeNewsletter />
         <!-- /Subscrive Newsletter -->
 
         <!-- Browse Popular Courses -->
