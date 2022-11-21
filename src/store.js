@@ -66,14 +66,14 @@ export const store = reactive({
             link: "https://www.behance.net/"
         },
         {
-            name: "???",
-            icon: "fa-solid fa-basketball",
-            link: ""
+            name: "Dribbble",
+            icon: "fa-brands fa-dribbble",
+            link: "https://dribbble.com/"
         },
         {
-            name: "???",
-            icon: "fa-solid fa-quote-right",
-            link: ""
+            name: "Flikr",
+            icon: "fa-brands fa-flickr",
+            link: "https://www.flickr.com/"
         },
         {
             name: "git",

@@ -21,7 +21,7 @@ export default {
             <img :src="getImagePath(image)" :alt="title">
         </div>
 
-        <div class="banner-text">
+        <div class="banner-text d-flex flex-column justify-content-between">
             <h2>{{ title }}</h2>
             <p>{{ text }}</p>
             <button class="btn btn-primary">{{ textButton }}</button>

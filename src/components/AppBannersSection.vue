@@ -41,6 +41,7 @@ export default {
 }
 
 .single-banner {
+    // height: 300px;
     border: 1px solid $col-light-gray;
 }
 </style>
