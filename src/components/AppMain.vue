@@ -3,6 +3,7 @@ import AppCTA from "./AppCTA.vue";
 import AppMerits from "./AppMerits.vue";
 import AppBrowseCategories from "./AppBrowseCategories.vue";
 import AppJumbotron from "./AppJumbotron.vue";
+import AppRecentCourses from "./AppRecentCourses.vue";
 
 export default {
     name: "AppMain",
@@ -10,7 +11,8 @@ export default {
         AppCTA,
         AppMerits,
         AppBrowseCategories,
-        AppJumbotron
+        AppJumbotron,
+        AppRecentCourses
     }
 }
 </script>
@@ -34,6 +36,7 @@ export default {
         <!-- /Jumbotron -->
 
         <!-- Browse Recent Coureses -->
+        <AppRecentCourses />
         <!-- /Browse Recent Coureses -->
 
         <!-- Proud section -->

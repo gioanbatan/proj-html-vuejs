@@ -33,7 +33,7 @@ export default {
             </div>
 
             <nav class="flex-grow-1 justify-content-end align-items-center">
-                <AppStdNavMenu :menuItems="store.navItems" />
+                <AppStdNavMenu class="justify-content-end" :menuItems="store.navItems" />
             </nav>
 
             <div class="links-icons">

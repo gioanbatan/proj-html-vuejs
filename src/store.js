@@ -114,27 +114,33 @@ export const store = reactive({
     macroCategories: [
         {
             name: "Art",
-            thumb: "cat_2-740x310.jpg"
+            thumb: "cat_2-740x310.jpg",
+            link: ""
         },
         {
             name: "Exercise",
-            thumb: "cat_4-740x310.jpg"
+            thumb: "cat_4-740x310.jpg",
+            link: ""
         },
         {
             name: "Material Design",
-            thumb: "cat_3-740x310.jpg"
+            thumb: "cat_3-740x310.jpg",
+            link: ""
         },
         {
             name: "Music",
-            thumb: "cat_5-740x310.jpg"
+            thumb: "cat_5-740x310.jpg",
+            link: ""
         },
         {
             name: "Photogrphy",
-            thumb: "cat_6-740x310.jpg"
+            thumb: "cat_6-740x310.jpg",
+            link: ""
         },
         {
             name: "Software Developer",
-            thumb: "cat_1-1540x750.jpg"
+            thumb: "cat_1-1540x750.jpg",
+            link: ""
         }
     ],
     isLogged: false,

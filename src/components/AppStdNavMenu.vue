@@ -9,7 +9,7 @@ export default {
 </script>
 
 <template>
-    <ul class="d-flex justify-content-end">
+    <ul class="d-flex">
         <li v-for="(item, index) in menuItems" :key="index" class="p-1">
             <a :href="item.link">
                 {{ item.name }}
