@@ -7,6 +7,8 @@ import AppRecentCourses from "./AppRecentCourses.vue";
 import AppProud from "./AppProud.vue";
 import AppSubscribeNewsletter from "./AppSubscribeNewsletter.vue";
 import AppPopularCourses from "./AppPopularCourses.vue";
+import AppBannersSection from "./AppBannersSection.vue";
+import AppQuote from "./AppQuote.vue";
 
 export default {
     name: "AppMain",
@@ -18,7 +20,9 @@ export default {
         AppRecentCourses,
         AppProud,
         AppSubscribeNewsletter,
-        AppPopularCourses
+        AppPopularCourses,
+        AppBannersSection,
+        AppQuote
     }
 }
 </script>
@@ -58,9 +62,11 @@ export default {
         <!-- /Browse Popular Courses -->
 
         <!-- Banners section -->
+        <AppBannersSection />
         <!-- /Banners section -->
 
         <!-- Quote -->
+        <AppQuote />
         <!-- /Quote -->
     </main>
 </template>
