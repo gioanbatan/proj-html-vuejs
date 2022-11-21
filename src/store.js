@@ -149,7 +149,10 @@ export const store = reactive({
         {
             name: "Web Coding and Apache Basics",
             thumbnail: "./assets/img/12345-1-272x161.png",
-            category: "Apache",
+            category: [
+                "Apache",
+                "Software Developer"
+            ],
             duration: 6,
             cost: 0,
             dateCreation: "2022-11-10",

@@ -33,11 +33,11 @@ export default {
     }
 
     h5 {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     p {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         color: $col-gray;
     }
 }

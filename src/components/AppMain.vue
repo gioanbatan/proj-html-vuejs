@@ -34,15 +34,15 @@ export default {
         <!-- /CTA -->
 
         <!-- Merits -->
-        <AppMerits />
+        <AppMerits class="pb-5" />
         <!-- /Merits -->
 
         <!-- Browse categories -->
-        <AppBrowseCategories />
+        <AppBrowseCategories class="py-5" />
         <!-- /Browse categories -->
 
         <!-- Jumbotron -->
-        <AppJumbotron />
+        <AppJumbotron class="my-5" />
         <!-- /Jumbotron -->
 
         <!-- Browse Recent Coureses -->

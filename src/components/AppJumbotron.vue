@@ -7,7 +7,7 @@ export default {
 <template>
     <section class="jumbotron">
         <div class="container">
-            <div class="jumbotron-content">
+            <div class="jumbotron-content p-2 d-flex flex-column align-items-start justify-content-center">
                 <h2 class="pb-4">Limitless learning, more possibilities</h2>
 
                 <p class="pb-4">Online courses open the opportunity for learning to almost anyone, regardless of their
@@ -15,7 +15,7 @@ export default {
                     commitments.
                 </p>
 
-                <button class="btn btn-primary">READ MORE</button>
+                <button class="ms_std-btn">read more</button>
             </div>
         </div>
     </section>
@@ -30,7 +30,15 @@ export default {
 
 .jumbotron-content {
     width: 50%;
-    height: 500px;
-    padding: 5rem;
+    height: 600px;
+
+    h2 {
+        font-weight: 300;
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
 }
 </style>

@@ -2,6 +2,7 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 @import "node_modules/@fontsource/montserrat/index.css";
+@import "node_modules/@fontsource/montserrat/300.css";
 
 // RESET
 * {
@@ -37,6 +38,11 @@ body {
 }
 
 //UTILITIES
+//Containers
+.ms_container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
 
 //Colors
 .col-gray {
@@ -44,6 +50,21 @@ body {
 }
 
 //Buttons
+.ms_std-btn {
+    color: $col-white;
+    font-size: 0.8rem;
+    font-weight: 800;
+    padding: 1.3em 1.6em;
+    text-transform: uppercase;
+    background-color: $col-std-blue;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $col-std-btn-hover;
+    }
+}
 
 
 //Select

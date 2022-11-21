@@ -7,7 +7,6 @@ export default {
         AppMeritCard
     }
 }
-
 </script>
 
 <template>
