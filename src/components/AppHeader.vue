@@ -66,13 +66,13 @@ export default {
             </div>
 
             <div class="user-options d-flex align-items-center">
-                <a v-if="!store.isLogged" href="">
+                <a v-if="!store.userLogged" href="">
                     <i class="fa-regular fa-user"></i>
                     Log In
                 </a>
                 <a v-else href="">
                     <i class="fa-regular fa-user"></i>
-                    USERNAME
+                    {{ store.userLogged }}
                 </a>
 
                 <button class="btn btn-primary ms_btn">
@@ -102,6 +102,7 @@ header {
     width: 100%;
     height: $header-height;
     background-color: $col-white;
+    z-index: 999;
 }
 
 .header-top {

@@ -4,6 +4,7 @@ import AppMerits from "./AppMerits.vue";
 import AppBrowseCategories from "./AppBrowseCategories.vue";
 import AppJumbotron from "./AppJumbotron.vue";
 import AppRecentCourses from "./AppRecentCourses.vue";
+import AppProud from "./AppProud.vue";
 
 export default {
     name: "AppMain",
@@ -12,7 +13,8 @@ export default {
         AppMerits,
         AppBrowseCategories,
         AppJumbotron,
-        AppRecentCourses
+        AppRecentCourses,
+        AppProud
     }
 }
 </script>
@@ -40,6 +42,7 @@ export default {
         <!-- /Browse Recent Coureses -->
 
         <!-- Proud section -->
+        <AppProud />
         <!-- /Proud section -->
 
         <!-- Subscrive Newsletter -->
