@@ -34,7 +34,7 @@ a {
         right: -0.5rem;
         font-size: 0.45rem;
         padding: 0.08rem;
-        background-color: $col-new;
+        background-color: $col-important;
         border-radius: 3px 3px 3px 0;
         color: $col-white;
     }
