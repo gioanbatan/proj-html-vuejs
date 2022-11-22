@@ -28,11 +28,11 @@ export default {
         </select>
     </section>
 
-    <section class="input-search d-flex flex-grow-1">
+    <section class="input-search d-flex flex-grow-1 px-2">
         <label for="search" hidden>{{ searchType }}</label>
         <input type="text" id="search" :placeholder="searchType" v-model="store.inputSearch"
             @keyup.enter="$emit('startSearch')">
-        <button @click="$emit('startSearch')" class="ms_std-btn-rect">
+        <button @click="$emit('startSearch')" class="ms_std-btn-rect d-flex align-items-center justify-content-center">
             <i class="fa-solid fa-magnifying-glass"></i>
         </button>
     </section>
@@ -50,11 +50,18 @@ select {
     appearance: unset;
 }
 
-input {
-    width: 100%;
-    background-color: $col-light-gray;
-    border: none;
-    height: 3rem;
-    padding: 0.2rem;
+.input-search {
+    input {
+        width: 100%;
+        background-color: $col-light-gray;
+        border: none;
+        height: 2.8rem;
+        padding: 0.2rem;
+    }
+
+    button {
+        width: 3.3rem;
+        height: 2.8rem;
+    }
 }
 </style>

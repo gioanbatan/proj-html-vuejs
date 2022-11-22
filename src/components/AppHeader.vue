@@ -61,31 +61,31 @@ export default {
                 </div>
 
                 <div class="actions d-flex align-items-center">
-                    <a href="">
+                    <a class="px-3" href="">
                         <i class="fa-solid fa-bullhorn"></i>
                         Become an instructor
                     </a>
-                    <a href="">
+                    <a class="px-3" href="">
                         <i class="fa-solid fa-briefcase"></i>
                         For Enterprise
                     </a>
                 </div>
 
                 <div class="user-options d-flex align-items-center">
-                    <a v-if="!store.userLogged" href="">
+                    <a v-if="!store.userLogged" href="" class="px-3">
                         <i class="fa-regular fa-user"></i>
                         Log In
                     </a>
-                    <a v-else href="">
+                    <a v-else href="" class="px-3">
                         <i class="fa-regular fa-user"></i>
                         {{ store.userLogged }}
                     </a>
 
-                    <button class="ms_std-btn">
+                    <button class="ms_std-btn d-flex align-items-center justify-content-center">
                         Sign up
                     </button>
 
-                    <div class="add-favorites">
+                    <div class="add-favorites px-3">
                         <a href="">
                             <i class="fa-regular fa-bookmark"></i>
                         </a>
@@ -126,8 +126,6 @@ header {
 .header-bottom {
     font-size: 0.8rem;
     height: calc(($header-height / 100) * 55);
-    // DEBUG
-    border-bottom: 1px dashed black;
 
     .logo-container {
         padding: 0.3rem;
@@ -137,6 +135,17 @@ header {
     .actions {
         i {
             color: $col-std-blue;
+        }
+    }
+
+    .user-options {
+        button {
+            height: 2.8rem;
+        }
+
+        .add-favorites {
+            font-size: 1.6rem;
+            font-weight: 300;
         }
     }
 
