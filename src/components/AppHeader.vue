@@ -27,7 +27,7 @@ export default {
             <div class="ms_container">
                 <div class="header-top-content d-flex justify-content-between align-items-center">
                     <div class="language">
-                        <select name="language" id="language">
+                        <select class="ms_std-select pl-1" name="language" id="language">
                             <option v-for="(language, index) in store.languageOptions" :key="index"
                                 :value="language.id">{{
                                         language.name
@@ -50,13 +50,13 @@ export default {
         <!-- Header bottom -->
         <div class="ms_container">
             <section class="header-bottom d-flex justify-content-between align-items-center">
-                <div class="logo-container">
+                <div class="logo-container d-flex align-items-center">
                     <a href="">
                         <img src="../assets/img/MasterStudy_logo.svg" alt="Master Study">
                     </a>
                 </div>
 
-                <div class="search-bar">
+                <div class="search-bar d-flex flex-grow-1">
                     <AppSearch :searchType="'Search course'" :categories="store.macroCategories" />
                 </div>
 
@@ -128,6 +128,11 @@ header {
     height: calc(($header-height / 100) * 55);
     // DEBUG
     border-bottom: 1px dashed black;
+
+    .logo-container {
+        padding: 0.3rem;
+        height: 100%;
+    }
 
     .actions {
         i {
