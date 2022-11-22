@@ -160,7 +160,7 @@ export const store = reactive({
             vote: [5, 5, 5],
             subscriptions: 65,
             special: false,
-            featured: false,
+            featured: true,
         }
     ],
     totalStudents: 1234,

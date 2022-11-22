@@ -35,13 +35,14 @@ export default {
     <section class="course-card">
         <div class="course-image">
             <img :src="getImagePath(`../assets/img/${course.thumbnail}`)" :alt="course.name">
+            <div v-if="course.featured" class="course-featured-band"></div>
             <div class="course-sticker-container">
                 <div v-if="course.subscriptions > 50" class="course-sticker hot"></div>
                 <div v-if="course.special" class="course-sticker special"></div>
             </div>
         </div>
 
-        <div class="course-info p-3">
+        <div class="course-info p-3" :class="{ 'course-featured': course.featured }">
             <span class="course-category d-block">{{ course.category[0] }} &gt</span>
             <h5 class="course-name">{{ course.name }}</h5>
             <div class="course-card-bottom d-flex justify-content-between">
@@ -72,6 +73,7 @@ export default {
     width: 100%;
     max-width: 300px;
     height: 300px;
+    overflow: hidden;
 
     .course-image {
         position: relative;
@@ -83,6 +85,25 @@ export default {
             height: 100%;
             object-fit: cover;
             object-position: center;
+        }
+
+        .course-featured-band {
+            width: 150px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            transform: rotate(-45deg) translate(-40px, -20px);
+            background-color: $col-featured;
+            color: $col-white;
+            font-size: 0.7rem;
+            font-weight: 500;
+        }
+
+        .course-featured-band::after {
+            content: "FEATURED";
         }
 
         .course-sticker-container {
@@ -128,8 +149,15 @@ export default {
     }
 
     .course-info {
+        border-right: 1px solid $col-light-gray;
+        border-bottom: 1px solid $col-light-gray;
+        border-left: 1px solid $col-light-gray;
 
-        border: 1px solid $col-light-gray;
+        &.course-featured {
+            border-right: 1px solid $col-featured;
+            border-bottom: 1px solid $col-featured;
+            border-left: 1px solid $col-featured;
+        }
 
         .course-category {
             font-size: 0.7rem;
