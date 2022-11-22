@@ -161,6 +161,22 @@ export const store = reactive({
             subscriptions: 65,
             special: false,
             featured: true,
+        },
+        {
+            name: "Web Coding and Apache Basics",
+            thumbnail: "12345-1-272x161.png",
+            category: [
+                "Apache",
+                "Software Developer"
+            ],
+            duration: 6,
+            cost: 0,
+            discount: 0,
+            dateCreation: "2022-11-10",
+            vote: [5, 5, 5],
+            subscriptions: 65,
+            special: false,
+            featured: true,
         }
     ],
     totalStudents: 1234,
