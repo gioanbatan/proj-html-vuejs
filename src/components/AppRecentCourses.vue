@@ -21,9 +21,9 @@ export default {
     <section class="recent-courses">
         <div class="container-fluid">
             <div class="recent-courses-content">
-                <h2 class="text-center">Recent Courses</h2>
+                <h2 class="pb-5 text-center">Recent Courses</h2>
 
-                <AppStdNavMenu class="d-flex justify-content-center" :menuItems="store.macroCategories" />
+                <AppStdNavMenu class="pb-5 d-flex justify-content-center" :menuItems="store.macroCategories" />
 
                 <div class="courses-cards">
                     <div class="row gy-5">
@@ -31,8 +31,8 @@ export default {
                             <AppCourseCard :course="store.courses[0]" />
                         </div>
 
-                        <div class=" show-all d-flex justify-content-center">
-                            <button class="btn btn-primary">SHOW ALL</button>
+                        <div class="show-all d-flex justify-content-center">
+                            <button class="ms_std-btn">SHOW ALL</button>
                         </div>
                     </div>
                 </div>
@@ -43,4 +43,12 @@ export default {
 
 <style lang="scss" scoped>
 @use "../styles/general.scss" as *;
+
+.recent-courses-content {
+    h2 {
+        font-size: 2.8rem;
+        font-weight: 300;
+    }
+
+}
 </style>

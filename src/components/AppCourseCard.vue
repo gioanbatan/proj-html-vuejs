@@ -171,6 +171,8 @@ export default {
         }
 
         .course-card-bottom {
+            font-size: 0.8rem;
+
             .five-star {
                 i {
                     color: $col-gold;

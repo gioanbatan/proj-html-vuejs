@@ -18,27 +18,29 @@ export default {
 </script>
 
 <template>
-    <footer class="py-5">
+    <footer class="py-5 mt-3">
         <div class="container">
             <div class="footer-content">
                 <div class="row row-cols-4 gx-5">
                     <div class="col about">
-                        <h6>About</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum assumenda fuga nulla modi
-                            aliquid soluta eligendi laborum corrupti, vero possimus mollitia ullam quis perferendis sed
-                            aspernatur atque non quo molestias.</p>
-                        <AppStdIconLinksVue class="col-gray" :icons="store.footerIcons" />
+                        <h6 class="pb-4">About</h6>
+                        <p><a href="">Masterstudy</a> is Education WordPress theme featured by Learning Management
+                            System (LMS) for online education.
+                            <br>
+                            Developed by <a href="">StylemixThemes</a>.
+                        </p>
+                        <AppStdIconLinksVue class="ms_icon-size col-gray" :icons="store.footerIcons" />
                     </div>
                     <div class="col contact">
-                        <h6>Contact</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h6 class="pb-4">Contact</h6>
+                        <p>USA, California 20, First Avenue, Callifornia</p>
                         <span class="d-block">Tel:{{ store.infoTel }}</span>
                         <span class="d-block">Fax:{{ store.infoFax }}</span>
                         <br>
                         <a class="d-block col-gray" href="">{{ store.infoMail }}</a>
                     </div>
                     <div class="col pages">
-                        <h6>Pages</h6>
+                        <h6 class="pb-4">Pages</h6>
                         <ul>
                             <li v-for="(page, index) in store.pagesList" :key="index">
                                 <a :href="page.link">
@@ -48,7 +50,7 @@ export default {
                         </ul>
                     </div>
                     <div class="col blog">
-                        <h6>Blog</h6>
+                        <h6 class="pb-4">Blog</h6>
                         <AppBlogPostPreview :postQty="2" />
                     </div>
                 </div>
@@ -64,21 +66,26 @@ export default {
 .footer-content {
     h6 {
         font-weight: 500;
+        font-size: 1.1rem;
     }
 }
 
 .about {
     p {
-        font-size: 0.67rem;
+        font-size: 0.8rem;
+    }
+
+    a {
+        color: $col-std-blue;
     }
 }
 
 .contact {
-    font-size: 0.67rem;
+    font-size: 0.8rem;
 }
 
 .pages {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
 
     ul {
         display: flex;
@@ -86,6 +93,7 @@ export default {
 
         li {
             position: relative;
+            line-height: 2rem;
             width: 50%;
             list-style: initial;
             list-style-position: inside;
@@ -103,5 +111,9 @@ export default {
         }
     }
 
+}
+
+.ms_icon-size {
+    font-size: 1.4rem;
 }
 </style>

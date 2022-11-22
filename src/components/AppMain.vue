@@ -38,7 +38,7 @@ export default {
         <!-- /Merits -->
 
         <!-- Browse categories -->
-        <AppBrowseCategories class="y-5" />
+        <AppBrowseCategories class="my-5" />
         <!-- /Browse categories -->
 
         <!-- Jumbotron -->
@@ -46,7 +46,7 @@ export default {
         <!-- /Jumbotron -->
 
         <!-- Browse Recent Coureses -->
-        <AppRecentCourses />
+        <AppRecentCourses class="py-5" />
         <!-- /Browse Recent Coureses -->
 
         <!-- Proud section -->
@@ -58,7 +58,7 @@ export default {
         <!-- /Subscrive Newsletter -->
 
         <!-- Browse Popular Courses -->
-        <AppPopularCourses />
+        <AppPopularCourses class="py-5" />
         <!-- /Browse Popular Courses -->
 
         <!-- Banners section -->

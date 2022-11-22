@@ -1,27 +1,43 @@
 <script>
+import { store } from "../store";
+import AppCourseCard from "./AppCourseCard.vue";
+
 export default {
     name: "AppPopularCourses",
+    components: {
+        AppCourseCard
+    },
+    data() {
+        return {
+            store
+        }
+    }
 }
 
 </script>
 
 <template>
-    <section class="popular-courses">
-        <div class="container">
-            <div class="popular-courses-content py-3">
-                <h2 class="text-center">Popular Courses</h2>
+    <section class="popular-courses ">
+        <div class="container-fluid">
+            <div class="popular-courses-content py-5">
+                <h2 class="py-4 text-center">Popular courses</h2>
 
+                <p class="pb-5 text-center">Discover our most popular courses for sel learning</p>
                 <div class="courses-cards">
-                    <div class="row row-cols-6">
-                        <div v-for="n in 6" class="col">
-                            CARD {{ n }}
+                    <div class="row gy-5">
+                        <div v-for="n in 6" class="col-6 col-sm-4 col-md-3 col-xl-2">
+                            <AppCourseCard :course="store.courses[0]" />
                         </div>
                     </div>
                 </div>
 
-                <div class="courses-slide-commands d-flex justify-content-center">
-                    <button class="btn btn-primary">back</button>
-                    <button class="btn btn-primary">forward</button>
+                <div class="mt-4 courses-slider-commands d-flex justify-content-center">
+                    <button class="ms_btn-slider">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <button class="ms_btn-slider">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -37,7 +53,14 @@ export default {
 }
 
 .popular-courses-content {
-    // DEBUG
-    height: 400px;
+    h2 {
+        font-size: 3rem;
+        font-weight: 300;
+    }
+
+    p {
+        font-size: 1.25rem;
+        font-weight: 300;
+    }
 }
 </style>

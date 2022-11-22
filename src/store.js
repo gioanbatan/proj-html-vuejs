@@ -199,11 +199,13 @@ export const store = reactive({
             title: 'Our main target is to "Developing Yourself as a Leader"',
             datePublished: "2003-11-25",
             thumb: "photo-1517520287167-4bbf64a00d66-122x120.jpeg",
+            href: ""
         },
         {
             title: "Those Other College Expenses You Aren't Thinking About",
             datePublished: "2011-08-10",
             thumb: "photo-1490376840453-5f616fbebe5b-150x150.jpeg",
+            href: ""
         },
     ]
 })
