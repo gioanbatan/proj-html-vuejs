@@ -24,11 +24,13 @@ export default {
 @use "../styles/general.scss" as *;
 
 .stat-number {
-    font-size: 3rem;
+    font-weight: 300;
+    font-size: 4rem;
 }
 
-.stat-number {
+.stat-type {
     text-transform: uppercase;
-    font-size: 2rem;
+    font-weight: 200;
+    font-size: 1.4rem;
 }
 </style>

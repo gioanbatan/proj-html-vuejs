@@ -16,15 +16,15 @@ export default {
 </script>
 
 <template>
-    <section class="banner p-4 d-flex align-items-center">
-        <div class="banner-image d-flex align-items-center pe-3">
+    <section class="banner py-5 px-3 d-flex align-items-center">
+        <div class="banner-image d-flex align-items-center pe-1">
             <img :src="getImagePath(image)" :alt="title">
         </div>
 
-        <div class="banner-text d-flex flex-column justify-content-between">
+        <div class="banner-text d-flex flex-column justify-content-center align-items-start">
             <h2>{{ title }}</h2>
             <p>{{ text }}</p>
-            <button class="btn btn-primary">{{ textButton }}</button>
+            <button class="ms_std-btn">{{ textButton }}</button>
         </div>
     </section>
 </template>
@@ -42,7 +42,7 @@ export default {
     }
 
     .banner-text {
-        width: 50%;
+        width: 40%;
         height: 100%;
     }
 

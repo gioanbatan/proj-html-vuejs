@@ -13,10 +13,11 @@ export default {
 
 <template>
     <section class="subscribe-newsletter">
+
         <div class="container">
-            <div class="subscribe-newsletter-content py-4 d-flex">
-                <div class="suscribe-text d-flex flex-column justify-content-between">
-                    <h6>Suscribe our newsletter</h6>
+            <div class="subscribe-newsletter-content py-4 d-flex align-items-center">
+                <div class="suscribe-text pe-5 d-flex flex-column justify-content-between">
+                    <h5>Suscribe our newsletter</h5>
                     <p>There are many variations of passages of Lorem Ipsum avaible, but the majority have suffered
                         alteration in some form, by injected humor, or randomised words</p>
                 </div>
@@ -46,27 +47,34 @@ export default {
 
 .subscribe-newsletter-content {
     width: 100%;
-    height: 160px;
+    height: 200px;
 
     .suscribe-text {
-        width: 50%;
-        height: 100%;
+        width: 60%;
+        height: 60%;
 
-        h6 {
+        h5 {
             font-weight: 600;
         }
 
         p {
-            font-size: 0.75rem;
+            font-size: 1rem;
+            margin-bottom: 0;
         }
     }
 
     .subscribe-input {
-        width: 50%;
-        height: 100%;
+        width: 40%;
+        height: 60%;
 
         label {
-            font-size: 0.8rem;
+            font-size: 0.95rem;
+        }
+
+        input {
+            border: none;
+            padding: 0.75rem;
+            font-size: 0.85rem;
         }
     }
 }

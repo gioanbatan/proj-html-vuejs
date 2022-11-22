@@ -21,11 +21,11 @@ export default {
             <div class="we-are-proud-content text-center">
                 <h2 class="pb-2">We are Proud</h2>
 
-                <p class="pb-2">Certificate courses are instructed by highly educated and qualified instructors who hold
+                <p class="pb-5">Certificate courses are instructed by highly educated and qualified instructors who hold
                     doctoral and
                     masters's level degrees.</p>
 
-                <div class="stats d-flex">
+                <div class="stats mt-5 pt-5 d-flex">
                     <div class="single-stat">
                         <AppStatsTable class="d-flex flex-column align-items-center" :statNumber="[3, 3, 5, 2, 5, 2, 4]"
                             :statType="'students'" />
@@ -49,7 +49,6 @@ export default {
             </div>
         </div>
     </section>
-
 </template>
 
 <style lang="scss" scoped>
@@ -61,22 +60,43 @@ export default {
     background-image: url("../assets/img/we_proud.png");
     background-position: center bottom;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: auto;
 }
 
 .we-are-proud-content {
     padding-top: 5rem;
     width: 100%;
-    height: 500px;
+    height: 750px;
+
+    h2 {
+        font-weight: 300;
+        font-size: 3rem;
+    }
+
+    p {
+        width: 70%;
+        margin: 0 auto;
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
 }
 
 .stats {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
 
     .single-stat {
         width: calc(100% / 4);
         border-left: 1px solid $col-light-gray;
         border-right: 1px solid $col-light-gray;
+    }
+
+    .single-stat:first-child {
+        border-left: none;
+    }
+
+    .single-stat:last-child {
+        border-right: none;
     }
 }
 </style>

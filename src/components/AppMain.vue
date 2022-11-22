@@ -38,7 +38,7 @@ export default {
         <!-- /Merits -->
 
         <!-- Browse categories -->
-        <AppBrowseCategories class="py-5" />
+        <AppBrowseCategories class="y-5" />
         <!-- /Browse categories -->
 
         <!-- Jumbotron -->

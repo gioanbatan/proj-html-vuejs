@@ -18,7 +18,7 @@ export default {
 </script>
 
 <template>
-    <footer>
+    <footer class="py-5">
         <div class="container">
             <div class="footer-content">
                 <div class="row row-cols-4 gx-5">
@@ -61,10 +61,10 @@ export default {
 @use "../styles/general.scss" as *;
 @use "../styles/partials/variables" as *;
 
-
-footer {
-    // DEBUG
-    border-top: 1px dashed black;
+.footer-content {
+    h6 {
+        font-weight: 500;
+    }
 }
 
 .about {

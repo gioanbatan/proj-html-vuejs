@@ -125,8 +125,7 @@ header {
 
 .header-bottom {
     font-size: 0.8rem;
-    height: 55%;
-
+    height: calc(($header-height / 100) * 55);
     // DEBUG
     border-bottom: 1px dashed black;
 
